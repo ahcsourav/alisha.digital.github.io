@@ -1,0 +1,67 @@
+<!document html>
+<html>
+	<head>
+		<title>Alisha Digital</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+	</head>
+	
+	<body>
+		<header>
+		<img src="logo.png" id="logo">
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		</header>
+		<section>
+		<img src="bg-03.png" id="stars">
+		<img src="bg-05.png" id="hill_back">
+		<img src="bg-04.png" id="logo">
+		<img src="bg-01.png" id="hill">
+		<h2 id="text">Alisha Digital Agency</h2>
+		<a href="#" id= "btn">Portfolio</a>
+		<img src="bg-02.png" id="hill_front">
+		</section>
+			<div class= "sec" id="sec">
+			<h2>About Us</h2>
+			<p>At ALISHA, we provide 360' creative digital marketing services. From strategy to development, we stay with our clients with all the consultancy they need. Our expert team constantly monitors and develops strategies to make your brand stand out from branding to marketing.<br> <br>
+			We create interactive digital solutions by combining strategy with marketing, design & technology. We ensure customers prefer you over your competitors because the way we work is totally based on a deep understanding of data, technology, emerging trends, and most importantly people. <br><br>
+			From day one with our clients our dedicated team professionally handles all the works that are needed to make our client's digital dream come true. Our team gives attention to detail, our creative eye brings the most creative solution out there, and most importantly our quality work is what makes us different from others in the market. Let's meet over a cup of coffee or tea! <br><br>
+			
+			At ALISHA, we provide 360' creative digital marketing services. From strategy to development, we stay with our clients with all the consultancy they need. Our expert team constantly monitors and develops strategies to make your brand stand out from branding to marketing.<br> <br>
+			We create interactive digital solutions by combining strategy with marketing, design & technology. We ensure customers prefer you over your competitors because the way we work is totally based on a deep understanding of data, technology, emerging trends, and most importantly people. <br><br>
+			From day one with our clients our dedicated team professionally handles all the works that are needed to make our client's digital dream come true. Our team gives attention to detail, our creative eye brings the most creative solution out there, and most importantly our quality work is what makes us different from others in the market. Let's meet over a cup of coffee or tea! <br><br>
+			
+			</p>
+			</div>
+			
+			<script>
+			let stars = document.getElementById("stars");
+			let hill_back = document.getElementById('hill_back');
+			let logo = document.getElementById('logo');
+			let hill = document.getElementById('hill');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+			let hill_front = document.getElementById('hill_front');
+			let header = document.querySelector('header');
+			
+			window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+				stars.style.left = value * 0.25 + 'px';
+				hill_back.style.top = value * 1.05 + 'px';
+				logo.style.top = value * 0.4 + 'px';
+				hill.style.top = value * 0.3 + 'px';
+				hill_front.style.top = value * 0 + 'px';
+				text.style.marginRight = value * 4 + 'px';
+				text.style.marginTop = value * 1.5 + 'px';
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.06 + 'px';
+			})
+			</script>
+			
+	</body>
+</html>
